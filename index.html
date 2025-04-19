@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real-Time PDF Reader</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📄 Real-Time PDF Reader</h1>
+      <div class="controls">
+        <input type="file" id="pdf-upload" accept="application/pdf">
+        <input type="text" id="search" placeholder="Search PDF text...">
+        <button id="download-text">Download Text</button>
+        <button id="toggle-mode">Toggle Mode</button>
+        <button id="summarize-btn">Summarize</button>
+      </div>
+    </div>
+    <div id="pdf-content" class="pdf-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
